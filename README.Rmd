@@ -38,3 +38,6 @@ data("ersa")
 head(ersa)
 ```
 
+## Gadget
+
+Invoke the gadget from the RStudio Addins dropdown or `ers_converter`.

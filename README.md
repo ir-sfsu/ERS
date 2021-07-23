@@ -33,3 +33,7 @@ head(ersa)
 #> 5      Accommodation Status      1   17 17
 #> 6 Accommodation Status Date      8   18 25
 ```
+
+## Gadget
+
+Invoke the gadget from the RStudio Addins dropdown or `ers_converter`.
