@@ -1,0 +1,4 @@
+Name: Run ERS Txt Gadget
+Description: Run ERS Txt Gadget
+Binding: ers_converter
+Interactive: true

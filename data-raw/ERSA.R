@@ -159,4 +159,4 @@ Unassigned	82	469	550
 )
 ersa <- ersa[complete.cases(ersa),]
 # sum(ersa$Length) == 550
-use_data(ersa, overwrite = TRUE)
+usethis::use_data(ersa, overwrite = TRUE)
