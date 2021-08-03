@@ -34,6 +34,12 @@ head(ersa)
 #> 6 Accommodation Status Date      8   18 25
 ```
 
+``` r
+clean_raw_ers_txt_file("path_to_raw_txt_file.txt", type = "ERSA")
+```
+
 ## Gadget
 
 Invoke the gadget from the RStudio Addins dropdown or `ers_converter`.
+
+![](inst/ers_gadget.png)
