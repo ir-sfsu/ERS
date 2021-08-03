@@ -4,12 +4,14 @@
 \alias{clean_raw_ers_txt_file}
 \title{Clean a raw ERS text file}
 \usage{
-clean_raw_ers_txt_file(file, type = c("ERSA", "ERSS", "ERSD", "ERSFA"))
+clean_raw_ers_txt_file(file, type = c("ERSA", "ERSS", "ERSD", "ERSFA"), ...)
 }
 \arguments{
 \item{file}{path to the raw text file}
 
 \item{type}{ERS file type}
+
+\item{...}{Arguments passed on to janitor::make_clean_names}
 }
 \value{
 a data frame

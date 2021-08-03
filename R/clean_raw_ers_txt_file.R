@@ -2,10 +2,11 @@
 #'
 #' @param file path to the raw text file
 #' @param type ERS file type
+#' @param ... Arguments passed on to janitor::make_clean_names
 #'
 #' @return a data frame
 #' @export
-clean_raw_ers_txt_file <- function(file, type = c("ERSA", "ERSS", "ERSD", "ERSFA")) {
+clean_raw_ers_txt_file <- function(file, type = c("ERSA", "ERSS", "ERSD", "ERSFA"), ...) {
 
   type <- match.arg(type)
   layout <- switch(type,
@@ -16,6 +17,6 @@ clean_raw_ers_txt_file <- function(file, type = c("ERSA", "ERSS", "ERSD", "ERSFA
 
   out <- readr::read_fwf(file, readr::fwf_widths(layout[["Length"]]))
   names(out) <- layout[["Field Name"]]
-  janitor::clean_names(out)
+  janitor::clean_names(out, ...)
 }
 
