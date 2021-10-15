@@ -53,3 +53,17 @@
 #' }
 #' @source \url{https://asd.calstate.edu/ded}
 "ersfa"
+
+#' ERSR layout
+#'
+#'
+#' @format A data frame with 25 rows and 4 variables:
+#' \describe{
+#'   \item{Field Name}{field name}
+#'   \item{Length}{character length of field}
+#'   \item{From}{beginning index}
+#'   \item{To}{ending index}
+#'   ...
+#' }
+#' @source \url{https://asd.calstate.edu/ded}
+"ersr"
