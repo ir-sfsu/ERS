@@ -4,7 +4,11 @@
 \alias{clean_raw_ers_txt_file}
 \title{Clean a raw ERS text file}
 \usage{
-clean_raw_ers_txt_file(file, type = c("ERSA", "ERSS", "ERSD", "ERSFA"), ...)
+clean_raw_ers_txt_file(
+  file,
+  type = c("ERSA", "ERSS", "ERSD", "ERSFA", "ERSR"),
+  ...
+)
 }
 \arguments{
 \item{file}{path to the raw text file}
